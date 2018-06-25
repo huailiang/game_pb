@@ -4,19 +4,20 @@
 # Function:	make c++ code to so 
 #
 
-LOCAL_PATH := $(call my-dir)
+# Copyright 2006 The Android Open Source Project
+
+LOCAL_PATH := $(call my-dir)  
+
 include $(CLEAR_VARS)
 
-#so 文件名
-LOCAL_MODULE   := ptotobuf-lib
+
+LOCAL_CFLAGS:= -DHAVE_PTHREAD=1
 
 #  c++目录的相对路径
-MY_FILES_PATH  :=  $(LOCAL_PATH)/../../ptotobuf-lib
-
-#$(warning $(MY_FILES_PATH))
+MY_FILES_PATH  :=  $(LOCAL_PATH)/
 
 # c++后缀
-MY_FILES_SUFFIX := %.cpp %.c
+MY_FILES_SUFFIX := %.cpp %.cc %.c
 
 # 递归遍历目录下的所有的文件
 rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
@@ -40,22 +41,10 @@ MY_ALL_DIRS := $(call uniq,$(MY_ALL_DIRS))
 
 # 赋值给NDK编译系统
 LOCAL_SRC_FILES  := $(MY_SRC_LIST)
-LOCAL_C_INCLUDES := $(MY_ALL_DIRS)
+LOCAL_C_INCLUDES:= $(LOCAL_PATH)/
 
-#在这里设置宏
-LOCAL_CFLAGS := -D__ANDROID__
-
-# Add additional include directories
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
-#LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../../Eigen-3.2.2   
-#必须从Android.mk配置文件中拿掉对Eigen的直接包含，放到程序代码中用相对路径包含：
-# #include "../../Eigen-3.2.2/Eigen"
-# using namespace Eigen;
-
-#$(warning $(LOCAL_SRC_FILES))
-#$(warning $(LOCAL_C_INCLUDES))
-
-# use log system in NDK
+LOCAL_SHARED_LIBRARIES:= 
+LOCAL_MODULE:= libprotobuf
+LOCAL_MODULE_TAGS := optional
 LOCAL_LDLIBS += -llog
-
 include $(BUILD_SHARED_LIBRARY)

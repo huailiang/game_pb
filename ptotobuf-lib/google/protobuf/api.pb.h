@@ -31,7 +31,6 @@
 #include <google/protobuf/unknown_field_set.h>
 #include <google/protobuf/source_context.pb.h>
 #include <google/protobuf/type.pb.h>
-
 // @@protoc_insertion_point(includes)
 
 namespace protobuf_google_2fprotobuf_2fapi_2eproto {
