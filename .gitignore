@@ -19,7 +19,7 @@
 **/Android/jni/*.h
 **/Android/jni/*.cc
 **/Android/jni/*.cpp
-**/Android/libs/
+Android/libs/
 **/Android/obj/
 
 
