@@ -20,3 +20,19 @@ protobuf-cpp项目你需要设置如下：
 <img src="image/1.jpg">
 
 附加包含目录设置当前protbuf项目下， SDL检查置否
+
+在编译osx的bundle库的时候，需要设置好宏：
+
+<img src="image/2.jpg">
+
+文件搜索路径也需要把protobuf-lib 包含进去：
+
+<img src="image/3.jpg">
+
+ios编辑的时候记得选择真机模式，而不是模拟器模式，否则在再真机上不能运行：
+
+<img src="image/4.jpg">
+
+你也可以通过lipo命令合并模拟器和真机上的库，参考我之前介绍过的paper, 地址：
+
+https://huailiang.github.io/2018/03/01/exportcpp

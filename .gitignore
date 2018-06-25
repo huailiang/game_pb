@@ -2,9 +2,12 @@
 **/UnityEnv/Win32/
 **/UnityEnv/xcode_proj/
 
-**/protobuf-cpp/Debug/
-**/protobuf-cpp/x64/
-**/protobuf-cpp/.vs/
+**/ptotobuf-lib/Debug/
+**/ptotobuf-lib/x64/
+**/protobuf-lib/.vs/
+**/XCPP/x64/
+**/XCPP/Debug/
+**/XCPP/.vs/
 **/UnityEnv/[Ll]ibrary/
 **/UnityEnv/[Tt]emp/
 **/UnityEnv/[Oo]bj/
