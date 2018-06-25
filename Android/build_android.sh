@@ -1,8 +1,15 @@
 #!/bin/bash
 
-path=/Users/huailiang.peng/Documents/unity/game_pb_cpp
+path=/Users/huailiang.peng/Documents/unity/game_pb
 
 cd ${path}
+
+rm -rf Android/jni/google/
+rm -rf Android/jni/interface/
+
+cp -rf ptotobuf-lib/google Android/jni/
+cp -rf ptotobuf-lib/interface Android/jni/
+
 
 cd Android/jni
 
@@ -14,11 +21,11 @@ ndk-build
 
 echo "make new so success"
 
-# cd ../libs
+cd ${path}
 
-# cp -f armeabi-v7a/libptotobuf-lib.so ../../../Assets/Plugins/Android/libs/armeabi-v7a/libptotobuf-lib.so
+cp -f Android/libs/armeabi-v7a/libprotobuf-lib.so UnityEnv/Assets/Plugins/Android/libs/armeabi-v7a/libprotobuf-lib.so
 
-# cp -f x86/libptotobuf-lib.so ../../../Assets/Plugins/Android/libs/x86/libptotobuf-lib.so
+cp -f Android/libs/x86/libprotobuf-lib.so UnityEnv/Assets/Plugins/Android/libs/x86/libprotobuf-lib.so.so
 
-# echo "copy so success, bye!"
+echo "copy so success, bye!"
 

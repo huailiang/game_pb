@@ -15,6 +15,7 @@
 **/UnityEnv/.vs/
 
 **/Android/jni/google/
+**/Android/jni/interface/
 **/Android/jni/*.h
 **/Android/jni/*.cc
 **/Android/jni/*.cpp

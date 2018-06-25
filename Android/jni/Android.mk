@@ -1,15 +1,12 @@
 # Copyright (C) 
-# Author: AlexPeng
-# Date:	  2017-11-25 
+# Author: huailiang.peng
+# Date:	  2018-06-25 
 # Function:	make c++ code to so 
 #
-
-# Copyright 2006 The Android Open Source Project
 
 LOCAL_PATH := $(call my-dir)  
 
 include $(CLEAR_VARS)
-
 
 LOCAL_CFLAGS:= -DHAVE_PTHREAD=1
 
@@ -44,7 +41,7 @@ LOCAL_SRC_FILES  := $(MY_SRC_LIST)
 LOCAL_C_INCLUDES:= $(LOCAL_PATH)/
 
 LOCAL_SHARED_LIBRARIES:= 
-LOCAL_MODULE:= libprotobuf
+LOCAL_MODULE:= libprotobuf-lib
 LOCAL_MODULE_TAGS := optional
 LOCAL_LDLIBS += -llog
 include $(BUILD_SHARED_LIBRARY)
