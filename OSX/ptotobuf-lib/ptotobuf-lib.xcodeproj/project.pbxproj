@@ -873,7 +873,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_PTHREAD;
-				HEADER_SEARCH_PATHS = "/Users/huailiang.peng/Documents/unity/game_pb_cpp/ptotobuf-lib";
+				HEADER_SEARCH_PATHS = "/Users/huailiang.peng/Documents/unity/game_pb/ptotobuf-lib";
 				INFOPLIST_FILE = "ptotobuf-lib/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yunstudio.ptotobuf-lib";
@@ -889,7 +889,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_PTHREAD;
-				HEADER_SEARCH_PATHS = "/Users/huailiang.peng/Documents/unity/game_pb_cpp/ptotobuf-lib";
+				HEADER_SEARCH_PATHS = "/Users/huailiang.peng/Documents/unity/game_pb/ptotobuf-lib";
 				INFOPLIST_FILE = "ptotobuf-lib/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yunstudio.ptotobuf-lib";

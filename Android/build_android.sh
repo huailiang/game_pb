@@ -1,17 +1,19 @@
 #!/bin/bash
 
-path=/Users/huailiang.peng/Documents/unity/game_pb
+path=`dirname $0`
+#/Users/huailiang.peng/Documents/unity/game_pb
+
 
 cd ${path}
 
-rm -rf Android/jni/google/
-rm -rf Android/jni/interface/
+rm -rf jni/google/
+rm -rf jni/interface/
 
-cp -rf ptotobuf-lib/google Android/jni/
-cp -rf ptotobuf-lib/interface Android/jni/
+cp -rf ../ptotobuf-lib/google jni/
+cp -rf ../ptotobuf-lib/interface jni/
 
 
-cd Android/jni
+cd jni
 
 echo "start clean last so files"
 
@@ -21,7 +23,7 @@ ndk-build
 
 echo "make new so success"
 
-cd ${path}
+cd ../../
 
 cp -f Android/libs/armeabi-v7a/libprotobuf-lib.so UnityEnv/Assets/Plugins/Android/libs/armeabi-v7a/libprotobuf-lib.so
 

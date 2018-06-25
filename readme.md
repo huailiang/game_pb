@@ -33,6 +33,10 @@ ios编辑的时候记得选择真机模式，而不是模拟器模式，否则�
 
 <img src="image/4.jpg">
 
+android 编译的时候需要本地有下载好的 NDK，并且把 ndk 路径配置到环境变量中
+
+进入 Android 目录，执行脚本 build_android.sh， 脚本会编译各平台的 so，并且帮助 copy 到 Unity 对应的目录
+
 你也可以通过lipo命令合并模拟器和真机上的库，参考我之前介绍过的paper, 地址：
 
 https://huailiang.github.io/2018/03/01/exportcpp
