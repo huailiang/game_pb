@@ -21,6 +21,10 @@ protobuf-cpp项目你需要设置如下：
 
 附加包含目录设置当前protbuf项目下， SDL检查置否
 
+android 编译的时候需要本地有下载好的 NDK，并且把 ndk 路径配置到环境变量中
+
+进入 Android 目录，执行脚本 build_android.sh， 脚本会编译各平台的 so，并且帮助 copy 到 Unity 对应的目录
+
 在编译osx的bundle库的时候，需要设置好宏：
 
 <img src="image/2.jpg">
@@ -32,10 +36,6 @@ protobuf-cpp项目你需要设置如下：
 ios编辑的时候记得选择真机模式，而不是模拟器模式，否则在再真机上不能运行：
 
 <img src="image/4.jpg">
-
-android 编译的时候需要本地有下载好的 NDK，并且把 ndk 路径配置到环境变量中
-
-进入 Android 目录，执行脚本 build_android.sh， 脚本会编译各平台的 so，并且帮助 copy 到 Unity 对应的目录
 
 你也可以通过lipo命令合并模拟器和真机上的库，参考我之前介绍过的paper, 地址：
 
