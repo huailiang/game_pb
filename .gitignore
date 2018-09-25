@@ -13,6 +13,7 @@
 **/UnityEnv/[Oo]bj/
 **/UnityEnv/[Bb]uild/
 **/UnityEnv/.vs/
+**/UnityEnv/.vscode/
 
 **/Android/jni/google/
 **/Android/jni/interface/
