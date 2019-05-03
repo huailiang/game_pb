@@ -28,4 +28,4 @@ ios编辑的时候记得选择真机模式，而不是模拟器模式，否则�
 
 你也可以通过lipo命令合并模拟器和真机上的库，参考我之前介绍过的paper, 地址：
 
-https://huailiang.github.io/2018/03/01/exportcpp
+https://huailiang.github.io/blog/2018/exportcpp/
